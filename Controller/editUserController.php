@@ -3,5 +3,5 @@
   $_SESSION['email'] = $_POST['email'];
   $_SESSION['password'] = $_POST['password'];
   $_SESSION['role'] = $_POST['role'];
-  include("../Model/editUserModel.php");
+  $model->editUser();
   header("Location: ../View/index.php");

@@ -1,1 +1,2 @@
-<?php include("../Model/notificationViewModel.php"); ?>
+<?php
+  $result = $model->notificationView();

@@ -4,7 +4,7 @@
     <div style="background-color: #28a745" class="d-flex justify-content-center">
         <h4 class="card-title text-white my-2">Create Order</h4>
     </div>
-    <form class="mt-4 form-text" action="../Controller/createOrderController.php"  method="POST" >
+    <form class="mt-4 form-text" action="../Controller/createOrderController.php" method="POST" >
         <div class="form-group">
           <label for="name" class="text-dark" >Name</label>
           <input type="text" name="name" class="form-control" placeholder="name" >

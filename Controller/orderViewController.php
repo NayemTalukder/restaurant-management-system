@@ -1,1 +1,3 @@
-<?php include("../Model/orderViewModel.php"); ?>
+<?php
+  
+  $result = $model->orderView();

@@ -1,5 +1,7 @@
 <?php
     session_start();
+    include('../Controller/controller.php');
+    if (!isset($_SESSION['method'])) $_SESSION['method'] = 'not-set';
 ?>
 <!DOCTYPE html>
 <html>

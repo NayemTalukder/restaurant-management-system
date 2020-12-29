@@ -2,7 +2,7 @@
 
 <div class="w-50 mx-auto my-5 ">
     <div style="background-color: #28a745" class="d-flex justify-content-center">
-        <h4 class="card-title text-white my-2">Sen Notification</h4>
+        <h4 class="card-title text-white my-2">Send Notification</h4>
     </div>
     <form class="mt-4 form-text" action="../Controller/createOrderController.php"  method="POST" >
         <div class="form-group">

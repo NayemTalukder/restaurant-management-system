@@ -22,6 +22,7 @@
                 echo '<li class="nav-link"><a class="nav-link text-white" href="viewNotification.php"><i class="fas fa-bell mr-2"></i>Notifications</a></li>';
               }
             ?>
+            <li class="nav-link"><a class="nav-link text-white" href="Test.php"><i class="fas fa-hammer mr-1"></i>Test</a></li>
         </ul>
         <span class="navbar-text mr-3">
            <span class="mr-1 text-white">Role :</span>
