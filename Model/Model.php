@@ -5,9 +5,9 @@
       include('connect.php');
       $name = $_SESSION['name'];
       $description = $_SESSION['description'];
-
-      $query = "INSERT INTO orders (name, description, status) VALUES ('$name','$description', 'pending)";
-      mysqli_query($con,$query);
+      
+      $query = "INSERT INTO orders (id, name, description, status) VALUES (NULL, '$name','$description', 'pending')";
+      mysqli_query($con, $query);
     }
     public function createUser() {
       include('connect.php');
@@ -16,7 +16,7 @@
       $role = $_SESSION['role'];
     
       $query = "INSERT INTO user (email, user_password, role) VALUES ('$email','$password', '$role')";
-      mysqli_query($con,$query);
+      mysqli_query($con, $query);
     }
 
     // Delete Queries
@@ -24,24 +24,35 @@
       include('connect.php');
       $id = $_SESSION['id'];
       $query = "DELETE FROM orders WHERE orders.id = '$id'";
-      mysqli_query($con,$query);
+      mysqli_query($con, $query);
     }
     public function deleteUser() {
       include('connect.php');
       $id = $_SESSION['id'];
       $query = "DELETE FROM user WHERE user.id = '$id'";
-      mysqli_query($con,$query);
+      mysqli_query($con, $query);
     }
 
     // Edit Query
+    public function editOrder() {
+      // var_dump($_SESSION);
+      include('connect.php');
+      $id = $_SESSION['id'];
+      $name = $_SESSION['name'];
+      $description = $_SESSION['description'];
+      $status = $_SESSION['status'];
+      $query = "UPDATE orders SET name = '$name', description = '$description', status = '$status' WHERE id = $id";
+      mysqli_query($con, $query);
+    }
     public function editUser() {
+      // var_dump($_SESSION);
       include('connect.php');
       $id = $_SESSION['id'];
       $email = $_SESSION['email'];
       $password = $_SESSION['password'];
       $role = $_SESSION['role'];
-      $query = "UPDATE user SET email = '$email', user_password = '$password', role = '$role', WHERE id = $id";
-      mysqli_query($con,$query);
+      $query = "UPDATE user SET email = '$email', user_password = '$password', role = '$role' WHERE id = $id";
+      mysqli_query($con, $query);
     }
     
     // Login Queries

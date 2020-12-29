@@ -23,11 +23,11 @@
                     <td style="vertical-align: middle;"><?php echo $rows['description'] ?></td>
                     <td style="vertical-align: middle;"><?php echo $rows['status'] ?></td>
                     <td style="vertical-align: middle;">
-                        <form action="editUser.php" method="post">
+                        <form action="editOrder.php" method="post">
                             <input name="id" class="w-100" type="text" value="<?php echo $rows['id'] ?>" style="display: none">
-                            <input name="email" class="w-100" type="text" value="<?php echo $rows['name'] ?>" style="display: none">
-                            <input name="password" class="w-100" type="text" value="<?php echo $rows['description'] ?>" style="display: none">
-                            <input name="role" class="w-100" type="text" value="<?php echo $rows['status'] ?>" style="display: none">
+                            <input name="name" class="w-100" type="text" value="<?php echo $rows['name'] ?>" style="display: none">
+                            <input name="description" class="w-100" type="text" value="<?php echo $rows['description'] ?>" style="display: none">
+                            <input name="status" class="w-100" type="text" value="<?php echo $rows['status'] ?>" style="display: none">
                             <button
                             style="cursor: pointer; font-size: 15px;"
                             class="btn btn-outline-success w-100 text-dark edit-item">Edit</button>

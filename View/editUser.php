@@ -5,6 +5,7 @@
         <h4 class="card-title text-white my-2">Edit User</h4>
     </div>
     <form class="mt-4 form-text" action="../Controller/editUserController.php" method="POST" >
+        <input name="id" class="w-100" type="text" value="<?php echo $_POST['id'] ?>" style="display: none">
         <div class="form-group">
           <label for="email" class="text-dark" >Email</label>
           <input type="email" name="email" class="form-control" value="<?php echo $_POST['email'] ?>" >

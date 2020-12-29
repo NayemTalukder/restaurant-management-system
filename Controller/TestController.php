@@ -1,8 +1,6 @@
 <?php
   session_start();
-  // var_dump($fff);
-  include('../TestCode/ModelTest.php');
-  $modelTest = new ModelTest();
+  include('controller.php');
   
   $_SESSION['status'] = false;
   $_SESSION['method'] = $_POST['method'];

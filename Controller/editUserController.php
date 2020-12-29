@@ -1,4 +1,6 @@
 <?php
+  session_start();
+  include('controller.php');
   $_SESSION['id'] = $_POST['id'];
   $_SESSION['email'] = $_POST['email'];
   $_SESSION['password'] = $_POST['password'];

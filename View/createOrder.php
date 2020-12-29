@@ -11,7 +11,7 @@
         </div>
         <div class="form-group">
           <label for="description" class="text-dark" >Description</label>
-          <input type="text" name="description" class="form-control" placeholder="description" >
+          <textarea name="description" class="form-control" placeholder="description" ></textarea>
         </div>
       <div class="sign-info text-center">
           <button type="submit" class="btn btn-dark d-block w-100 mb-2 text-white">Create</button>
