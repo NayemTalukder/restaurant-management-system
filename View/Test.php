@@ -15,8 +15,10 @@
       <select class="btn btn-outline-success w-40 float-right" name="method" id="methods">
         <option value="createOrder">createOrder</option>
         <option value="createUser">createUser</option>
+        <option value="createNotification">createNotification</option>
         <option value="deleteOrder">deleteOrder</option>
         <option value="deleteUser">deleteUser</option>
+        <option value="editOrder">editOrder</option>
         <option value="editUser">editUser</option>
         <option value="login">login</option>
         <option value="notificationView">notificationView</option>

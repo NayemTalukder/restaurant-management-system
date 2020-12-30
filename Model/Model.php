@@ -18,6 +18,14 @@
       $query = "INSERT INTO user (email, user_password, role) VALUES ('$email','$password', '$role')";
       mysqli_query($con, $query);
     }
+    public function createNotification() {
+      include('connect.php');
+      $name = $_SESSION['name'];
+      $description = $_SESSION['description'];
+      
+      $query = "INSERT INTO notification (id, name, description) VALUES (NULL, '$name','$description')";
+      mysqli_query($con, $query);
+    }
 
     // Delete Queries
     public function deleteOrder() {
@@ -35,7 +43,6 @@
 
     // Edit Query
     public function editOrder() {
-      // var_dump($_SESSION);
       include('connect.php');
       $id = $_SESSION['id'];
       $name = $_SESSION['name'];
@@ -45,7 +52,6 @@
       mysqli_query($con, $query);
     }
     public function editUser() {
-      // var_dump($_SESSION);
       include('connect.php');
       $id = $_SESSION['id'];
       $email = $_SESSION['email'];
@@ -55,10 +61,9 @@
       mysqli_query($con, $query);
     }
     
-    // Login Queries
+    // Login Query
     public function login() {
       session_start();
-      // echo "<script type='text/javascript'>alert('Your rating Accepted')</script>";
       include('connect.php');
       $email = $_SESSION['email'];
       $password = $_SESSION['password'];

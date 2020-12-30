@@ -9,8 +9,10 @@
   
   if($_SESSION['method'] == 'createOrder') $_SESSION['status'] = $modelTest->createOrderTest();
   else if($_SESSION['method'] == 'createUser') $_SESSION['status'] = $modelTest->createUserTest();
+  else if($_SESSION['method'] == 'createNotification') $_SESSION['status'] = $modelTest->createNotificationTest();
   else if($_SESSION['method'] == 'deleteOrder') $_SESSION['status'] = $modelTest->deleteOrderTest();
   else if($_SESSION['method'] == 'deleteUser') $_SESSION['status'] = $modelTest->deleteUserTest();
+  else if($_SESSION['method'] == 'editOrder') $_SESSION['status'] = $modelTest->editOrderTest();
   else if($_SESSION['method'] == 'editUser') $_SESSION['status'] = $modelTest->editUserTest();
   else if($_SESSION['method'] == 'login') $_SESSION['status'] = $modelTest->loginTest();
   else if($_SESSION['method'] == 'notificationView') $_SESSION['status'] = $modelTest->notificationViewTest();
